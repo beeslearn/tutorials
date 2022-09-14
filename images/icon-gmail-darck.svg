@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="24"
-   height="24"
+   width="26.666668"
+   height="26"
    version="1.1"
-   id="svg80"
-   sodipodi:docname="bx-menu.svg"
+   id="svg46"
+   sodipodi:docname="icon-gmail-darck.svg"
    inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
-     id="defs84" />
+     id="defs50" />
   <sodipodi:namedview
-     id="namedview82"
+     id="namedview48"
      pagecolor="#505050"
      bordercolor="#eeeeee"
      borderopacity="1"
@@ -22,17 +22,17 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
      showgrid="false"
-     inkscape:zoom="22.208333"
-     inkscape:cx="11.527205"
-     inkscape:cy="12.045028"
+     inkscape:zoom="11.104167"
+     inkscape:cx="12.202627"
+     inkscape:cy="9.7711071"
      inkscape:window-width="1366"
      inkscape:window-height="699"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg80" />
+     inkscape:current-layer="svg46" />
   <path
-     d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"
-     id="path78"
-     style="fill:#ffffff;fill-opacity:1" />
+     d="M 22.3051,3.6613597 20.599047,4.9868322 13.334988,10.354995 6.0709311,4.9338132 4.3648771,3.6083409 A 2.6657093,2.6509447 0 0 0 0.00644225,5.8351345 V 21.197357 A 1.8126824,1.8026424 0 0 0 1.8191245,23 H 6.0709311 V 12.767354 l 7.2640569,5.421182 7.264059,-5.421182 V 23 h 4.251806 a 1.8126824,1.8026424 0 0 0 1.812683,-1.802643 V 5.8351345 A 2.6657093,2.6509447 0 0 0 22.3051,3.6613597 Z"
+     id="path44"
+     style="fill:#59aaf5;fill-opacity:1;stroke-width:1.32916" />
 </svg>
