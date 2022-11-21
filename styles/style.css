@@ -1,209 +1,118 @@
-*{
-  margin: 0%;
-  padding: 0%;
-  font-family: sans-serif;
-  list-style: none;
-  text-decoration: none;
+*,::before, ::after{
+  margin: 0;
+  padding: 0;
+  border: 0;
   box-sizing: border-box;
+  vertical-align: baseline;
+  list-style: none;
 }
+img, video, iframe{
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+a{
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+form, input, textarea{
+  font-family: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  display: block;
+  color: inherit;
+}
+svg{
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+:root{
+  --primary-color:rgba(151,170,242,1);         
+  --primary-light-color:rgba(202,219,255,1);   
+  --primary-dark-color:rgba(102,123,191,1);    
+  --complementary-color:rgba(242,222,151,1);   
+  --analogous-a-color:rgba(151,216,242,1);     
+  --analogous-b-color:rgba(177,151,242,1);     
+  --triadic-a-color:rgba(222,151,242,1);       
+  --triadic-b-color:rgba(242,151,171,1);      
+  --triadic-c-color:rgba(171,242,151,1);       
+
+  --background-color:rgba(224 ,224,224,1);     
+  --text-color:rgba(41,41,41,1);                 
+
+  --gradient-a-color:rgba(202,219,255,0.3);    
+  --gradient-b-color:rgba(102,123,191,0.3);    
+}
+
 body{
-  background-color: beige;
-  background-image: url('../images/background.svg');
+  width: 100%;
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
 }
-.wrapper{
-  max-width: 1280px;
+.container{
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 70px;
+  margin-bottom: 30px;
 }
-
-/*                         Section banner                    */
-.containerBanner{
+.box{
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: right;
-  width: 100%;
-  height: 28px;
-  line-height: 28px;
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
-.boxBanner{
-  height: 28px;
-  line-height: 28px;
-  margin-right: 40px;
-}
-
-/*                     menu nav                    */
-nav{
-  background-color: #68e1fd;
-  width: 100%;
-  height: 60px;
-}
-nav ul{
-  float: right;
-  margin-right: 20px;
-}
-nav ul li{
-  display: inline-block;
-  line-height: 60px;
-  margin: 0 5px;
-}
-nav ul li a{
-  color: #2e98fa;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: large;
-  font-weight: 500;
-}
-.linkmenu:hover, .active{
-  background-color: white;
-}
-.checkbtn{
-  float: right;
-  line-height: 60px;
-  cursor: pointer;
-  margin-right: 20px;
-  display: none;
-}
-#check{
-  display: none;
-}
-
-/*                         section 1                           */
-.intro{
-  margin-left: 2em;
-  margin-right: 2em;
-  margin-top: 1em;
-}
-
-/*                         Section 2                           */
-/*--------------inicio estilos tutorial--------------------------------*/
-
-.titulo{
-  padding: 20px;
-  text-align: center;
-}
-.video{
-  display: block;
-  width: 70vw;
-  height: 39.375vw;
-  box-sizing: content-box;
-  margin: 5px auto;
-}
-iframe{
-  width: 100%;
-  height: 100%;
-}
-.contenido{
-  display: block;
-  width: 80%;
-  box-sizing: content-box;
-  margin: 5px auto;
-}
-
-/*--------------------fin estilos tutorial-------------------------------*/
-
-/*                           footer                             */
-footer{  
-  background-color: #2e98fa;
-  color: white;
-  padding-top: 10px;
-  padding-bottom: 5px;
-}
-.containerFooter{
-  display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 36px;
-  line-height: 36px;
-  margin-top: 10px;
+  margin: 20px;
+  padding-top: 40px;
+  border-radius: 20px;
+  box-shadow:  6px 6px 13px #a8a8a8,
+             -6px -6px 13px #ffffff;
 }
-.infoBox{
-  display: flex;
-  flex-wrap: wrap;
-  height: 36px;
-  line-height: 36px;
-  margin-right: 20px;
+.box p{
+  padding: 20px;
+  font-size: 24px;
 }
-.callBox{
-  height: 36px;
-  line-height: 36px;
-  margin-right: 5px;
+a{
+  padding: 10px 25px;
+  border-radius: 10px;
+  border: 1px solid var(--primary-color);
+  margin: 20px;
+  font-size: 24px;
+  box-shadow:  6px 6px 13px #a8a8a8,
+             -6px -6px 13px #ffffff;
 }
-.infoBox .callBox a:visited{
-  color: white;
+a:hover{
+  transform: scale(0.9);
 }
-.infoBox .callBox a:link{
-  color: white;
-}
-.downFooter{
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-/*                                         media  800px                           */
-@media screen and (max-width: 800px)
-{
-  .containerFooter{
-    height: auto;
-    flex-direction: column-reverse;
-  }
-  .infoBox{
-    justify-content: center;
-    margin-bottom: 10px;
-  }
-  .video{
-    display: block;
-    width: 80vw;
-    height: 45vw;
-    box-sizing: content-box;
-    margin: 5px auto;
-  }
+img{
+  max-width: 300px;
+  padding: 5px;
 }
 
-/*                                          media  600px               */
-@media screen and (max-width: 600px) {
-
-  .checkbtn{
-    display: block;
+@media screen and (max-width: 600px){
+  .container{
+    flex-direction: column;
+    margin-top: 10px;
   }
-  ul{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(104, 225, 253, 1);
-    background-image: url('../images/backgroundmedia.svg');
-    top: 104px;
-    left: -100%;
-    text-align: center;
-    transition: 0.4s;
-    padding-top: 20px;
+  .box{
+    width: 260px;
+    margin-top: 20px;
   }
-  nav ul li{
-    display: block;
+  .box p, a{
+    font-size: 20px;
   }
-  #check:checked ~ ul{
-    left: 0;
-  }  
-  nav ul li a{
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: large;
-    font-weight: 500;
+  img{
+    width: 90%;
   }
-  .containerFooter{
-    height: auto;
-    flex-direction: column-reverse;
-  }
-  .infoBox{
-    justify-content: center;
-  }
-  .video{
-    display: block;
-    width: 100vw;
-    height: 56.25vw;
-    box-sizing: content-box;
-    margin: 5px auto;
-  }  
 }
